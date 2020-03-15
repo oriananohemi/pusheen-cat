@@ -9,6 +9,7 @@ li {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -38,7 +39,7 @@ body {
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 10px 30px;
 }
 
 .brand-container {
@@ -46,7 +47,12 @@ body {
 }
 
 .nav-item {
+  font-size: 24px;
   margin-left: 20px;
+}
+
+.nav-item:hover {
+  color: #fbabd3;
 }
 
 /* ESTILOS DE SECTION DE PRESENTACION */
@@ -137,5 +143,25 @@ body {
 .footer {
   background-color: black;
   color: white;
-  font-size: 25px;
+  font-size: 18px;
+  text-align: right;
+  padding: 5px;
+}
+
+
+@media (max-width: 800px) {
+
+  .products-container {
+    flex-wrap: wrap;
+  }
+
+  .flex-container {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 40%;
+    max-width: 50%;
+    margin: 10px;
+  }
 }
