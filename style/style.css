@@ -34,7 +34,7 @@ body {
 
 .header {
   align-items: center;
-  background-color: blueviolet;
+  background-color: #8aeed6;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -62,7 +62,7 @@ body {
 /* ESTILOS DE LA SECCION DE PRODUCTOS */
 
 .products-container {
-  background-color: gainsboro;
+  background-color: #e0c8b6;
   display: flex;
   justify-content: space-evenly;
   padding: 40px;
@@ -86,18 +86,19 @@ body {
 }
 
 .button {
-  background-color: blueviolet;
-  border: 1px solid blueviolet;
+  background-color: #fbabd3;
+  border: 1px solid #fbabd3;
+  border-radius: 10px;
   color: white;
-  padding: 10px;
-  margin-top: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
 }
 
 /* ESTILOS DE LA SECCION DE ICONOS */
 
 .icon-container {
   display: flex;
-  padding: 30px 0;
+  padding: 40px 0;
   border-bottom: 1px solid black;
   margin: 0 20px;
   justify-content: center;
@@ -105,6 +106,7 @@ body {
 
 .icon-card {
   max-width: 15%;
+  margin: 0 20px;
 }
 
 .icon-img {
