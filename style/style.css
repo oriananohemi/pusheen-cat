@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,7 +19,8 @@ a {
 
 body {
   background-color: #fbf3e3;
-  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -26,9 +29,9 @@ body {
   max-width: 100%;
 }
 
-.flex-container {
-  align-items: center;
-  display: flex;
+.container {
+  margin: 0 auto;
+  width: 95%;
 }
 
 /* ESTILOS DEL HEADER */
@@ -37,6 +40,8 @@ body {
   align-items: center;
   background-color: #8aeed6;
   color: white;
+  font-size: 24px;
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
   padding: 10px 30px;
@@ -46,8 +51,12 @@ body {
   width: 50px;
 }
 
+.nav-container {
+  align-items: center;
+  display: flex;
+}
+
 .nav-item {
-  font-size: 24px;
   margin-left: 20px;
 }
 
@@ -67,20 +76,21 @@ body {
 
 /* ESTILOS DE LA SECCION DE PRODUCTOS */
 
-.products-container {
+.card-container {
   background-color: #e0c8b6;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 40px;
+  padding: 10px;
 }
 
 .card {
-  flex: 1 1 20%;
+  flex: 1 1 100%;
   border: 1px solid black;
+  border-radius: 12px;
   background-color: white;
   padding: 10px;
-  margin: 0 20px;
-  max-width: 25%;
+  margin: 10px 0;
 }
 
 .img-container {
@@ -96,23 +106,27 @@ body {
   border: 1px solid #fbabd3;
   border-radius: 10px;
   color: white;
+  font-weight: bold;
   padding: 10px 20px;
   margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #8aeed6;
 }
 
 /* ESTILOS DE LA SECCION DE ICONOS */
 
 .icon-container {
   display: flex;
-  padding: 40px 0;
+  flex-wrap: wrap;
   border-bottom: 1px solid black;
-  margin: 0 20px;
   justify-content: center;
 }
 
 .icon-card {
-  max-width: 15%;
-  margin: 0 20px;
+  flex: 1 1 100%;
+  margin: 10px;
 }
 
 .icon-img {
@@ -122,17 +136,13 @@ body {
 /* ESTILOS DE LA SECCION DE MENTIONS */
 
 .mention-section {
-  padding: 30px;
+  padding: 20px;
 }
 
 .subtitle {
   font-size: 50px;
   margin: 20px 0;
 }
-
-/* .mention-img {
-  width: 300px;
-} */
 
 .box-shadow {
   box-shadow: 4px 4px 8px gray;
@@ -143,25 +153,70 @@ body {
 .footer {
   background-color: black;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   text-align: right;
-  padding: 5px;
+  /* padding: 5px; */
+  margin-top: 40px;
 }
 
+.footer-img {
+  position: relative;
+  top: -60px;
+  width: 150px;
+}
 
-@media (max-width: 800px) {
+/* .icon-footer {
+  text-align: center;
+  margin-top: -30px;
+}
 
-  .products-container {
-    flex-wrap: wrap;
+.fab {
+  color: #fbabd3;
+  font-size: 50px;
+  margin-left: 10px;
+} */
+
+@media (min-width: 600px) {
+  body {
+    font-size: 20px;
   }
 
-  .flex-container {
-    flex-wrap: wrap;
+  .card-container {
+    padding: 10px;
   }
 
   .card {
-    flex: 1 1 40%;
-    max-width: 50%;
-    margin: 10px;
+    flex: 1 1 45%;
+    margin: 5px;
+  }
+
+  .mention-section {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 85%;
+  }
+
+  .card-container,
+  .icon-container {
+    flex-wrap: nowrap;
+    padding: 20px;
+  }
+
+  .card {
+    flex: 1 1 20%;
+    margin: 5px;
+  }
+
+  .icon-container {
+    padding: 40px 10px;
+  }
+
+  .icon-card {
+    margin: 0 20px;
+    max-width: 15%;
   }
 }
