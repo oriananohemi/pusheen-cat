@@ -2,7 +2,7 @@
 
 Pagina realizada como ejercicio, basada en la tienda Pusheen.
 
-Demo del proyecto https://oriananohemi.github.io/pusheenCat/
+Demo del proyecto https://oriananohemi.github.io/pusheen-cat/
 
 <img width=400 src="./img/Screen Shot 2020-08-30 at 00.30.14.png">
 <img width=400 src="./img/Screen Shot 2020-08-30 at 00.30.21.png">
